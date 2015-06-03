@@ -26,9 +26,6 @@ $.NM = function (lv1, lv2) {
         console.log('example init');
     };
 }) ();
-function test() {
-
-}
 ;(function() {
     var A = $.NM('banner');
 
@@ -36,3 +33,7 @@ function test() {
         console.log('banner init~~~~111');
     };
 }) ();
+
+function test() {
+
+}

@@ -125,11 +125,6 @@ body{
     color:green;
     height:12px;
 }
-.p_header{
-    background:#E9DC51;
-    color:#343434;
-    border:1px solid black;
-}
 .p_banner{
     width:400px;
     height:150px;
@@ -137,4 +132,9 @@ body{
     padding:10px;
     border:1px solid black;
     color:#fff;
+}
+.p_header{
+    background:#E9DC51;
+    color:#343434;
+    border:1px solid black;
 }
