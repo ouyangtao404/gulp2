@@ -1,12 +1,17 @@
 var config = require('./config.js').info;
 var fs = require("fs");
+var tier = 10;//最大嵌套层数，防止递归嵌套
+
 function readFile(path) {
+    var t = 0;
     var htmlStr = _readFile(path);//读取内容
-    while( /<%mod_load\(.*\)%>/.test(htmlStr)) {
+    while( /<%mod_load\(.*\)%>/.test(htmlStr) && t<tier) {
+        t++;
         htmlStr = renderInclude(htmlStr);//执行引入
     }
     return htmlStr;
 }
+
 function readDir(path, icallback, callback) {
     fs.readdir(path, function(err, files) {
         if (err) {
@@ -24,7 +29,7 @@ function readDir(path, icallback, callback) {
 
 //对有引入代码的文本，进行解析，返回解析后文本
 function renderInclude(str) {
-    var reg2 = /<%mod_load\('(.*?)','(.+?)','(.+?)'\)%>/g;
+    var reg2 = /<%mod_load\(\s*'(.*?)'\s*,\s*'(.+?)'\s*,\s*'(.+?)'\s*\)%>(?!.*?-->)/g;
     str = str.replace(reg2, function(include, title, dir, file) {
         var title_start = '';
         var title_end = '';

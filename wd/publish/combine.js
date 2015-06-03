@@ -20,20 +20,19 @@ $.NM = function (lv1, lv2) {
 };
 
 ;(function() {
-    var A = $.NM('banner');
-
-    A.init = function() {
-        console.log('banner init~~~~111');
-    };
-}) ();
-
-function test() {
-
-}
-;(function() {
     var A = $.NM('example');
 
     A.init = function() {
         console.log('example init');
+    };
+}) ();
+function test() {
+
+}
+;(function() {
+    var A = $.NM('banner');
+
+    A.init = function() {
+        console.log('banner init~~~~111');
     };
 }) ();

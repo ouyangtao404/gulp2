@@ -3,7 +3,6 @@ var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
-var contentIncluder = require('gulp-content-includer');
 var connect = require('gulp-connect');
 
 //web服务
