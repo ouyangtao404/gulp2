@@ -32,10 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="def2.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="def2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wd/mods/p_banner/assets/def2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="2" selection-start="10" selection-end="10" vertical-scroll-proportion="0.06312292" vertical-offset="0" max-vertical-offset="602">
               <folding />
             </state>
           </provider>
@@ -341,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="64" selection-end="64" vertical-scroll-proportion="0.094684385" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="129" selection-end="129" vertical-scroll-proportion="0.34717607" vertical-offset="0" max-vertical-offset="602">
@@ -358,6 +360,13 @@
     <entry file="file://$PROJECT_DIR$/wd/mods/p_banner/assets/def2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="10" selection-end="10" vertical-scroll-proportion="0.06312292" vertical-offset="0" max-vertical-offset="602">
           <folding />
         </state>
       </provider>
