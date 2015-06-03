@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script type="text/javascript" src='../publish/jquery/jquery-1.11.3.js' charset="utf-8"></script>
+
+</head>
+<body>
+<div class="test">
+    %mod_load('共用尾部1','p_footer1','def.html')%
+    %mod_load('共用尾部2','p_footer2','def.html')%
+    %mod_load('共用尾部3','p_footer3','def.html')%
+</div>
+
+
+<script>
+var a = $('.test').html();
+var num = 0;
+var str = readFile(a);
+$('.test').html(str);
+
+function readFile(path) {
+    var htmlStr = a;
+    htmlStr = renderInclude(htmlStr);
+    return htmlStr;
+}
+
+function renderInclude(str) {
+    num++;
+    if(num == 10) {
+        return '';
+    }
+    var reg2 = /%mod_load\('(.*?)','(.+?)','(.+?)'\)%/g;
+    str = str.replace(reg2, function(include, title, dir, file) {
+        title = '<br/>===title:'+a;
+        var content = readFile(a);
+        var rst = title + content;
+        return rst;
+    });
+    return str;
+}
+</script>
+</body>
+</html>

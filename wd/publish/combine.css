@@ -125,10 +125,16 @@ body{
     color:green;
     height:12px;
 }
-.a{
-    color:red;
+.p_banner{
+    width:400px;
+    height:150px;
+    background:#5890AD;
+    padding:10px;
+    border:1px solid black;
+    color:#fff;
 }
-body{
-    color:green;
-    height:12px;
+.p_header{
+    background:#E9DC51;
+    color:#343434;
+    border:1px solid black;
 }

@@ -19,7 +19,6 @@ $.NM = function (lv1, lv2) {
 	return w.APP[lv1];
 };
 
-
 ;(function() {
     var A = $.NM('banner');
 
@@ -28,6 +27,9 @@ $.NM = function (lv1, lv2) {
     };
 }) ();
 
+function test() {
+
+}
 ;(function() {
     var A = $.NM('example');
 

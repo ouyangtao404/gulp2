@@ -1,0 +1,12 @@
+.idea
+*.~
+.project
+*.*~
+*.bak
+wd/publish/combineJs*
+wd/publish/combineCss*
+test_*
+.DS_Store
+*.iml
+npm-debug.log
+*.~$lockREADME.md

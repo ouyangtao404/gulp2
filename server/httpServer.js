@@ -1,6 +1,7 @@
+var config = require('./config.js').info;
 //常量
-var ip = '127.0.0.1';
-var port = '86';
+var ip = config.ip;
+var port = config.port;
 var host = ip + ':' + port;
 
 //模块引入
